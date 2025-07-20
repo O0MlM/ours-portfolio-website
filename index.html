@@ -50,6 +50,7 @@
             <h1>Hello, I'm <span class="highlight">Sarisah</span>, <br>I'm <span class="highlight">Ratjikarn</span>, <br>and I'm <span class="highlight">Thanamintr</span></h1>
             <p class="hero-subtitle">Full Stack Developer</p>
             <p class="hero-description">I create beautiful and functional web applications</p>
+    
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-home">Get In Touch</a>
@@ -62,6 +63,7 @@
         </div>
     </section>
 
+    
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
@@ -133,45 +135,30 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/project1.jpeg" alt="Project 1">
-                    <div class="project-info">
-                        <h3>E-commerce Website</h3>
-                        <p>A full-stack e-commerce solution built with React and Node.js</p>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project2.webp" alt="Project 2">
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates</p>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project3.png" alt="Project 3">
-                    <div class="project-info">
-                        <h3>Weather App</h3>
-                        <p>A responsive weather application with location-based forecasts</p>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small btn-live">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Apps</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+            <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
+        
+        <div class="projects-grid">
+            <div class="project-card" data-category="web">
+                <!-- Project content -->
+            </div>
+            <div class="project-card" data-category="mobile">
+                <!-- Project content -->
+            </div>
+            <div class="project-card" data-category="ui">
+                <!-- Project content -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
@@ -219,6 +206,9 @@
 
     <!-- Footer -->
     <footer class="footer">
+        <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
         <div class="container">
             <p>&copy; 2025 Your Name. Software Engineering, RMUTL. All rights reserved.</p>
         </div>
